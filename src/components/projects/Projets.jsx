@@ -6,7 +6,7 @@ import "./projets.css";
   return (
     <section className="container" id='skills'>
         <h2>Mes projets</h2>
-        Je n'ai pas de projets
+        Work In Progress
     </section>
   )
 }
