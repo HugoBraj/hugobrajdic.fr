@@ -1,0 +1,223 @@
+/*================ Google Fonts ================*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+
+/*================ Variables CSS ================*/
+:root {
+    /*======== Color ========*/
+    --first-color: #B0DEFF;
+    --title-color: #e6a051;
+    --text-color: #B0DEFF;
+    --body-color: #212121;
+    --container-color: #313030;
+    --hover-color: #e6a0511B;
+
+    /*======== Font and Typo ========*/
+    --body-font: 'Rubik', sans-serif;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --samll-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+
+    /*======== Font Weight ========*/
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+
+    /*====== Box Shadow ========*/
+    --shadow: 0px 5px 20px 0px rgba(0,0,0,0.1);
+
+    /*====== Border Radius ========*/
+    --border-radius: 20px;
+
+}
+
+/*Responsive Typo*/
+@media screen and (max-width: 1024px){
+    :root{
+        --h1-font-size: 1.75rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1rem;
+        --normal-font-size: 0.938rem;
+        --samll-font-size: 0.813rem;
+        --smaller-font-size: 0.75rem;
+    }
+
+    .optional{
+        display: none;
+    }
+}
+
+/*================ Base ================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+     scroll-behavior: smooth;
+}
+
+#root{
+    width: 100%;
+}
+
+body,
+button,
+input,
+textarea{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+/**
+body{
+    background-color: var(--body-color);
+    line-height: 1.7;
+    
+}**/
+
+body {
+    background-color: var(--body-color);
+    line-height: 1.7;
+    color: var(--text-color);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 300% 300%;
+    background-image: linear-gradient(45deg, var(--body-color), var(--body-color) 25%, var(--body-color) 51%, rgb(22 54 91) 100%);;
+    -webkit-animation: AnimateBG 8s ease infinite;
+            animation: AnimateBG 8s ease infinite;
+  }
+  
+  @-webkit-keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+h1,h2,h3{
+    color: var(--title-color);
+    font-weight: var(--font-semibold);
+    line-height: 1.2;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/*================ Re-usable CSS Classes ================*/
+
+.container{
+    max-width: 1100px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.inner-container{
+    background-color: var(--container-color);
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.grid{
+    display: grid;
+}
+
+
+section{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.section__title {
+    font-size: var(--h1-font-size);
+    margin-left: 0.875rem;
+    font-weight: var(--font-bold);
+    position: relative;
+    margin-bottom: 3.75rem;
+}
+
+.section__title::before {
+    content: "";
+    background: url(./logo192.png);
+    height: 2.25rem;
+    width: 2.25rem;
+    position: absolute;
+    left: -0.875rem;
+    top: -0.875rem;
+}
+
+.btn {
+    padding: 0.75rem 2rem;
+    line-height: 1;
+    border-radius: 1.875rem;
+    box-shadow: 0 0 1 px rgba(0,0,0,0.1);
+    border: 1px solid transparent;
+    color: var(--container-color);
+    display: inline-block;
+    background-color: var(--title-color);
+    font-weight: var(--font-bold);
+}
+
+.btn:hover{
+    background-color: var(--first-color);
+}
+
+.btn:focus{
+    animation: button-push 0.3s ease-out 1;
+}
+
+@keyframes button-push {
+    50% {
+        transform: scale(0.95);
+    }
+    100%{
+        transform: scale(1)
+    }
+}
+

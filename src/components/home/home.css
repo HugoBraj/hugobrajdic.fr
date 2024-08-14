@@ -1,0 +1,45 @@
+.home__socials{
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+}
+
+
+.home__social-link {
+    font-size: 1.5rem;
+    color: var(--title-color);
+    font-weight: var(--font-bold);
+    transition: 0.2s;
+}
+
+.home__social-link:hover{
+    color: var(--first-color);
+}
+
+.home__intro{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+/** Signature Animation**/
+.pathSignature {
+    stroke-dasharray: 506.1844177246094px;
+    stroke-dashoffset: 506.1844177246094px;
+    animation: LineAnimation 2s ease-out forwards ;
+}
+
+.pathName{ 
+    stroke-dasharray: 200px;
+    stroke-dashoffset: 200px;
+    animation: LineAnimation 20s ease-out forwards ;
+}
+
+@keyframes LineAnimation {
+    to {
+        stroke-dashoffset: 0px;
+    }
+}
