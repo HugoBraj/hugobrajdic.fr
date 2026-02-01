@@ -2,10 +2,12 @@ import React from 'react'
 import "./home.css"
 import HeaderSocials from './HeaderSocials'
 import { useTypingEffect } from '../../hooks/typing-effect'
+import { useTranslation } from 'react-i18next'
 
 const Home = () => {
-  const typingText = useTypingEffect("Bonjour 👋 ", 50);
-  const typingText2 = useTypingEffect("Je suis développeur informatique 👨‍💻 ", 50);
+  const { t } = useTranslation()
+  const typingText = useTypingEffect(t('home_typingText'), 50);
+  const typingText2 = useTypingEffect(t('home_typingText2'), 50);
   return (
     <section className="container" id='home' >
       <div className="home__intro">

@@ -1,0 +1,39 @@
+.lang-toggle-btn {
+  padding: 0.6rem 0.9rem;
+  border: 2px solid var(--first-color);
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+  color: var(--first-color);
+  font-family: 'Rubik', sans-serif;
+  margin-top: 0.5rem;
+}
+
+.lang-toggle-btn:hover {
+  background-color: var(--first-color);
+  color: var(--body-color);
+  transform: scale(1.05);
+}
+
+.lang-toggle-btn:active {
+  transform: scale(0.95);
+}
+
+/* Responsive: Desktop sidebar vertical */
+@media screen and (min-width: 1025px) {
+  .lang-toggle-btn {
+    width: 100%;
+  }
+}
+
+/* Responsive: Mobile horizontal navbar */
+@media screen and (max-width: 1024px) {
+  .lang-toggle-btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+    margin-top: 0;
+  }
+}
