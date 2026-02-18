@@ -1,18 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.1770c88c.css",
-    "main.js": "/static/js/main.95c695ba.js",
+    "main.css": "/static/css/main.7f700008.css",
+    "main.js": "/static/js/main.daf20875.js",
     "static/js/787.5a4c5c97.chunk.js": "/static/js/787.5a4c5c97.chunk.js",
-    "static/media/Hugo.png": "/static/media/Hugo.a15a09555f2394e64bc9.png",
-    "static/media/HUGO BRAJDIC CV.pdf": "/static/media/HUGO BRAJDIC CV.a36b711365f7757c5a37.pdf",
-    "static/media/logo.svg": "/static/media/logo.f0ababac1990e4bc79b166e734e0dc38.svg",
     "index.html": "/index.html",
-    "main.1770c88c.css.map": "/static/css/main.1770c88c.css.map",
-    "main.95c695ba.js.map": "/static/js/main.95c695ba.js.map",
+    "main.7f700008.css.map": "/static/css/main.7f700008.css.map",
+    "main.daf20875.js.map": "/static/js/main.daf20875.js.map",
     "787.5a4c5c97.chunk.js.map": "/static/js/787.5a4c5c97.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1770c88c.css",
-    "static/js/main.95c695ba.js"
+    "static/css/main.7f700008.css",
+    "static/js/main.daf20875.js"
   ]
 }
