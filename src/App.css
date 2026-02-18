@@ -1,9 +1,5 @@
 .main{
-  margin-left: 110px;
-}
-
-@media screen and (max-width: 1024px){
-  .main{
-    margin-left: 0;
-  }
+  margin-left: 0;
+  width: 100%;
+  padding-top: 80px; /* Compenser la navbar fixe */
 }

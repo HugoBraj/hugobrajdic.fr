@@ -147,7 +147,6 @@ img{
 /*================ Re-usable CSS Classes ================*/
 
 .container{
-    max-width: 1100px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -158,66 +157,54 @@ img{
     gap: 1rem;
 }
 
-.inner-container{
-    background-color: var(--container-color);
-    border-radius: 8px;
-    padding: 10px 20px;
-}
-
-.grid{
-    display: grid;
-}
-
-
 section{
-    padding-top: 3rem;
-    padding-bottom: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
-.section__title {
-    font-size: var(--h1-font-size);
-    margin-left: 0.875rem;
-    font-weight: var(--font-bold);
-    position: relative;
-    margin-bottom: 3.75rem;
+/* Animation de révélation au scroll */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-.section__title::before {
-    content: "";
-    background: url(./logo192.png);
-    height: 2.25rem;
-    width: 2.25rem;
-    position: absolute;
-    left: -0.875rem;
-    top: -0.875rem;
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-.btn {
-    padding: 0.75rem 2rem;
-    line-height: 1;
-    border-radius: 1.875rem;
-    box-shadow: 0 0 1 px rgba(0,0,0,0.1);
-    border: 1px solid transparent;
-    color: var(--container-color);
-    display: inline-block;
-    background-color: var(--title-color);
-    font-weight: var(--font-bold);
+.reveal-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-.btn:hover{
-    background-color: var(--first-color);
+.reveal-left.visible {
+    opacity: 1;
+    transform: translateX(0);
 }
 
-.btn:focus{
-    animation: button-push 0.3s ease-out 1;
+.reveal-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-@keyframes button-push {
-    50% {
-        transform: scale(0.95);
-    }
-    100%{
-        transform: scale(1)
-    }
+.reveal-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.reveal-scale {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal-scale.visible {
+    opacity: 1;
+    transform: scale(1);
 }
 

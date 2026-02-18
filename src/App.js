@@ -1,23 +1,20 @@
 
 import './App.css';
-import About from './components/about/About';
-import Home from './components/home/Home';
-import Portfolio from './components/portfolio/Portfolio';
-import Resume from './components/resume/Resume';
-import Sidebar from './components/sidebar/Sidebar';
-import Projets from './components/projects/Projets';
+import Navbar from './components/navbar/Navbar';
+import Hero from './components/hero/Hero';
+import Projects from './components/projects/Projects';
+import Contact from './components/contact/Contact';
 
 const App = () => {
   return (
-   <>
-   <Sidebar />
-    <main className='main'>
-      <Home></Home>
-      <About/>
-      <Resume/>
-      <Projets/>
-    </main>
-   </>
+    <>
+      <Navbar />
+      <main className='main'>
+        <Hero />
+        <Projects />
+        <Contact />
+      </main>
+    </>
   )
 }
 
