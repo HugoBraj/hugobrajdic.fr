@@ -208,3 +208,36 @@ section{
     transform: scale(1);
 }
 
+/*================ Button Styles ================*/
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  background: linear-gradient(135deg, var(--first-color), var(--title-color));
+  color: var(--body-color);
+  border: none;
+  padding: 1.1rem 2.2rem;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  font-weight: var(--font-bold);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(176, 222, 255, 0.3);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(176, 222, 255, 0.4);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+  transform: none;
+  box-shadow: none;
+}
+

@@ -9,6 +9,7 @@ const LanguageSwitcher = () => {
     const newLang = i18n.language === 'fr' ? 'en' : 'fr';
     i18n.changeLanguage(newLang);
     localStorage.setItem('lang', newLang);
+    
   };
 
   return (
@@ -17,7 +18,8 @@ const LanguageSwitcher = () => {
       onClick={toggleLang}
       title={i18n.language === 'fr' ? 'Switch to English' : 'Passer au français'}
     >
-      {i18n.language === 'fr' ? 'EN' : 'FR'}
+      <i className={`fa-solid fa-${i18n.language === 'fr' ? 'earth-americas' : 'earth-europe'}`}></i>
+      <span className="lang-toggle-text">{i18n.language === 'fr' ? 'EN' : 'FR'}</span>
     </button>
   );
 };

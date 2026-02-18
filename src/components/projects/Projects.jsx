@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useTranslation } from 'react-i18next'
-import ImageCarousel from '../timeline/ImageCarousel'
+import { Link } from 'react-router-dom'
 import { timelineData } from '../timeline/data'
 import './projects.css'
 
@@ -15,7 +15,6 @@ const getTypeLabel = (type, t) => {
 
 const Projects = () => {
   const { t } = useTranslation()
-  const [hoveredId, setHoveredId] = useState(null)
 
   return (
     <section className="projects" id="projects">
@@ -24,39 +23,42 @@ const Projects = () => {
         
         <div className="projects__grid">
           {timelineData.map((project) => (
-            <div
+            <Link
               key={project.id}
-              className="projects__card"
-              onMouseEnter={() => setHoveredId(project.id)}
-              onMouseLeave={() => setHoveredId(null)}
+              to={`/project/${project.id}`}
+              className="projects__card-link"
             >
-              <div className="projects__header">
-                <div className="projects__info">
-                  <h3 className="projects__name">{project.title}</h3>
-                  <p className="projects__company">{project.company}</p>
+              <div className="projects__card">
+                <div className="projects__header">
+                  <div className="projects__info">
+                    <div className="projects__title-badges">
+                      <h3 className="projects__name">{t(project.titleKey)}</h3>
+                      <div className="projects__badges">
+                        {project.types.map((type, idx) => (
+                          <span key={idx} className={`projects__badge projects__badge--${type}`}>
+                            {getTypeLabel(type, t)}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                    {project.subtitleKey && (
+                      <p className="projects__subtitle">{t(project.subtitleKey)}</p>
+                    )}
+                  </div>
+                  <div className="projects__arrow">
+                    <i className="fa-solid fa-arrow-right"></i>
+                  </div>
                 </div>
-                <span className={`projects__badge projects__badge--${project.type}`}>
-                  {getTypeLabel(project.type, t)}
-                </span>
-              </div>
 
-              <p className="projects__date">{project.date}</p>
-              <p className="projects__description">{project.description}</p>
-
-              <div className="projects__skills">
-                {project.skills.map((skill, idx) => (
-                  <span key={idx} className="projects__skill-tag">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-
-              {project.images && project.images.length > 0 && (
-                <div className={`projects__carousel-wrapper ${hoveredId === project.id ? 'active' : ''}`}>
-                  <ImageCarousel images={project.images} />
+                <div className="projects__skills">
+                  {project.skills.map((skill, idx) => (
+                    <span key={idx} className="projects__skill-tag">
+                      {skill}
+                    </span>
+                  ))}
                 </div>
-              )}
-            </div>
+              </div>
+            </Link>
           ))}
         </div>
       </div>

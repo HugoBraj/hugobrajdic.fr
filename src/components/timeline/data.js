@@ -1,45 +1,52 @@
-// Structure de données pour la timeline
-// Type: 'professional', 'academic', 'personal'
-
 export const timelineData = [
   {
     id: 1,
-    type: 'professional',
-    date: '2024 - Présent',
-    title: 'Alternant Développeur Full-stack',
-    company: 'Groupe Covéa',
-    description: 'Développement d\'applications web et maintenance de systèmes existants.',
-    skills: ['Java EE', 'React', 'SQL', 'Spring Boot'],
-    images: [
-      // URLs des images à ajouter
-      '/path/to/image1.jpg',
-      '/path/to/image2.jpg'
-    ],
-    position: 'right' // 'left' or 'right'
+    types: ['academic', 'professional'],
+    date: 'Janvier 2026',
+    titleKey: 'project_1_title',
+    subtitleKey: 'project_1_subtitle',
+    descriptionKey: 'project_1_description',
+    skills: ['Nuxt 4', 'Vue 3', 'TypeScript', 'Three.js', 'Tailwind CSS', 'SSR/SPA'],
+    images: [],
+    href: null,
+    position: 'right'
   },
   {
     id: 2,
-    type: 'academic',
-    date: '2022 - 2025',
-    title: 'BUT Informatique',
-    company: 'IUT de Paris',
-    description: 'Formation en développement logiciel, bases de données et génie logiciel.',
-    skills: ['Java', 'Python', 'JavaScript', 'SQL', 'UML'],
+    types: ['personal'],
+    date: '2025',
+    titleKey: 'project_2_title',
+    subtitleKey: 'project_2_subtitle',
+    descriptionKey: 'project_2_description',
+    skills: ['Figma', 'UX/UI Design', 'Design System', 'Front-end'],
     images: [],
+    href: 'https://www.figma.com/proto/ALW3JKNEZU88Lc2CXph2PS/showOff?t=QVfp2Bc6vK47vqlQ-1',
     position: 'left'
   },
   {
     id: 3,
-    type: 'personal',
-    date: '2023',
-    title: 'Projet Personnel - Jeu Unity',
-    company: 'Projet personnel',
-    description: 'Création d\'un jeu vidéo en 3D avec Unity et C#.',
-    skills: ['Unity', 'C#', 'Blender', '3D Modeling'],
+    types: ['academic'],
+    date: 'Mai/Juin 2024',
+    titleKey: 'project_3_title',
+    subtitleKey: 'project_3_subtitle',
+    descriptionKey: 'project_3_description',
+    skills: ['React', 'Tailwind CSS', 'AnodisJS', 'Docker', 'PostgreSQL', 'API REST', 'Full-stack'],
     images: [],
+    href: 'https://github.com/aurelien2247/IMTVENTAIRE',
     position: 'right'
+  },
+  {
+    id: 4,
+    types: ['academic'],
+    date: 'Octobre 2025',
+    titleKey: 'project_4_title',
+    subtitleKey: 'project_4_subtitle',
+    descriptionKey: 'project_4_description',
+    skills: ['Flutter', 'Dart', 'Android Studio', 'API REST', 'Gestion asynchrone'],
+    images: [],
+    href: 'https://github.com/HugoBraj/space_hics',
+    position: 'left'
   }
-  // Ajouter plus d'éléments ici
 ];
 
 // Fonction helper pour filtrer par type

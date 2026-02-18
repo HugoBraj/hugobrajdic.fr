@@ -23,12 +23,11 @@ const Resume = () => {
           <p className="resume__subtitle">{t('resume_subtitle')}</p>
           
           <button
-            className="resume__button"
+            className="btn resume__button"
             onClick={handleDownload}
             aria-label={t('resume_download')}
           >
-            <span className="resume__icon">📄</span>
-            {t('resume_download')}
+            {t('resume_download')} ↓
           </button>
         </div>
       </div>

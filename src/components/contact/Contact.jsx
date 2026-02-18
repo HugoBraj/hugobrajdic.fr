@@ -121,7 +121,7 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            <button type="submit" className="contact__button" disabled={isSending}>
+            <button type="submit" className="btn contact__button" disabled={isSending}>
               {isSending ? t('contact_status_sending') : t('contact_send')}
             </button>
 
