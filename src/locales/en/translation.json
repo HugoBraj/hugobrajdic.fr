@@ -11,8 +11,19 @@
     "type_professional": "Professional",
     "type_academic": "Academic",
     "type_personal": "Personal",
+    "resume_title": "My Resume",
+    "resume_subtitle": "Discover my academic and professional background by downloading my full resume.",
+    "resume_download": "Download My Resume",
     "contact_title": "Contact Me",
+    "contact_subtitle": "If you have a question or a project in mind, feel free to reach out.",
     "contact_email_label": "Email",
+    "contact_email_placeholder": "your@email.com",
+    "contact_subject_label": "Subject",
+    "contact_subject_placeholder": "Subject of your request",
     "contact_message_label": "Message",
-    "contact_send": "Send"
+    "contact_message_placeholder": "Your message...",
+    "contact_send": "Send",
+    "contact_status_sending": "Sending...",
+    "contact_status_success": "Message sent. Thank you!",
+    "contact_status_error": "Something went wrong. Please try again later."
 }
