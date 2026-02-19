@@ -1,8 +1,7 @@
 import React from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import ImageCarousel from '../timeline/ImageCarousel'
-import { timelineData } from '../timeline/data'
+import { timelineData } from './data'
 import './project-detail.css'
 
 const getTypeLabel = (type, t) => {
@@ -86,13 +85,6 @@ const ProjectDetail = () => {
               </div>
             )}
           </div>
-
-          {project.images && project.images.length > 0 && (
-            <div className="project-detail__gallery">
-              <h2 className="project-detail__section-title">{t('project_detail_gallery')}</h2>
-              <ImageCarousel images={project.images} />
-            </div>
-          )}
         </div>
       </div>
     </section>

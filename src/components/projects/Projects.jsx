@@ -1,7 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
-import { timelineData } from '../timeline/data'
+import { timelineData } from './data'
 import './projects.css'
 
 const getTypeLabel = (type, t) => {

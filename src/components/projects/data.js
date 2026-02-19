@@ -7,7 +7,11 @@ export const timelineData = [
     subtitleKey: 'project_1_subtitle',
     descriptionKey: 'project_1_description',
     skills: ['Nuxt 4', 'Vue 3', 'TypeScript', 'Three.js', 'Tailwind CSS', 'SSR/SPA'],
-    images: [],
+    images: [
+      '/rscprojects/startup/1.png',
+      '/rscprojects/startup/2.mp4',
+      '/rscprojects/startup/3.mp4'
+    ],
     href: null,
     position: 'right'
   },
