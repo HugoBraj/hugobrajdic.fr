@@ -48,28 +48,14 @@
   transition: transform 0.3s ease;
 }
 
-.resume__button:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 35px rgba(176, 222, 255, 0.4);
-}
-
 .resume__button:hover .resume__icon {
   transform: scale(1.2);
-}
-
-.resume__button:active {
-  transform: translateY(-2px);
 }
 
 /* Responsive */
 @media screen and (max-width: 768px) {
   .resume {
     padding: 4rem 1.5rem;
-  }
-
-  .resume__button {
-    padding: 1rem 2rem;
-    font-size: 1rem;
   }
 }
 
@@ -87,7 +73,6 @@
   }
 
   .resume__button {
-    padding: 0.9rem 1.8rem;
     width: 100%;
     justify-content: center;
   }
