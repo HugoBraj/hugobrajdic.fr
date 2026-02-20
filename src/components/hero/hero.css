@@ -4,7 +4,8 @@
   justify-content: center;
   padding: 3rem 2rem 2rem 2rem;
   position: relative;
-  min-height: auto;
+  min-height: 600px;
+  overflow: hidden;
 }
 
 .hero__container {
@@ -16,6 +17,8 @@
   justify-content: center;
   gap: 2rem;
   animation: fadeInUp 0.8s ease-out;
+  position: relative;
+  z-index: 1;
 }
 
 @keyframes fadeInUp {
@@ -43,9 +46,10 @@
 /* Title */
 .hero__title {
   margin: 0;
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-size: clamp(2.2rem, 6.5vw, 4.5rem);
   font-weight: var(--font-bold);
-  line-height: 1.2;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
   color: var(--text-color);
   animation: fadeIn 1s ease-out 0.2s both;
 }
@@ -79,9 +83,10 @@
 /* Subtitle */
 .hero__subtitle {
   margin: 1.5rem 0 0 0;
-  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-size: clamp(1.15rem, 2.8vw, 1.75rem);
   font-weight: var(--font-medium);
-  line-height: 1.6;
+  line-height: 1.65;
+  letter-spacing: -0.3px;
   color: var(--text-color);
   max-width: 800px;
   animation: fadeIn 1s ease-out 0.4s both;
@@ -166,27 +171,11 @@
   .hero {
     padding: 6rem 1.5rem 2rem 1.5rem;
   }
-
-  .hero__title {
-    font-size: 2rem;
-  }
-
-  .hero__subtitle {
-    font-size: 1rem;
-  }
 }
 
 @media screen and (max-width: 480px) {
   .hero {
     padding: 6rem 1rem 2rem 1rem;
-  }
-
-  .hero__title {
-    font-size: 1.5rem;
-  }
-
-  .hero__subtitle {
-    font-size: 0.95rem;
   }
 
   .hero__tooltip {

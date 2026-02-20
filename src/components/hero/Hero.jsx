@@ -1,5 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import LeafAnimation from './LeafAnimation'
 import "./hero.css"
 
 const Hero = () => {
@@ -7,6 +8,7 @@ const Hero = () => {
 
   return (
     <section className="hero" id='hero'>
+      <LeafAnimation />
       <div className="hero__container">
         <div className="hero__content">
           <h1 className="hero__title">
