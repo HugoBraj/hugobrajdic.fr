@@ -23,7 +23,12 @@ export const timelineData = [
     subtitleKey: 'project_2_subtitle',
     descriptionKey: 'project_2_description',
     skills: ['Figma', 'UX/UI Design', 'Design System', 'Front-end'],
-    images: [],
+    images: [
+      '/rscprojects/showoff/1.png',
+      '/rscprojects/showoff/2.png',
+      '/rscprojects/showoff/3.png',
+      '/rscprojects/showoff/4.png'
+    ],
     href: 'https://www.figma.com/proto/ALW3JKNEZU88Lc2CXph2PS/showOff?t=QVfp2Bc6vK47vqlQ-1',
     position: 'left'
   },

@@ -41,6 +41,7 @@
     "project_detail_description": "Description",
     "project_detail_skills": "Compétences & Technos",
     "project_detail_gallery": "Galerie",
+    "project_detail_date": "Date :",
     "project_detail_link": "Lien vers le projet →",
     "project_detail_back": "← Retour aux projets",
     "project_detail_not_found": "Projet non trouvé"
