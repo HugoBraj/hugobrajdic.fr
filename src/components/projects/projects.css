@@ -133,9 +133,9 @@
 }
 
 .projects__badge--professional {
-  background: rgba(176, 0, 0, 0.2);
-  color: #ff6b6b;
-  border: 1px solid rgba(255, 107, 107, 0.3);
+  background: rgba(120, 0, 176, 0.2);
+  color: #f36bff;
+  border: 1px solid rgba(188, 107, 255, 0.3);
 }
 
 .projects__badge--academic {
