@@ -91,7 +91,7 @@ export const useLeafAnimation = (containerRef) => {
 
     for (let cluster = 0; cluster < CLUSTER_COUNT; cluster++) {
       const clusterT = cluster / CLUSTER_COUNT
-      const clusterSpeed = Math.random() * 0.0008 + 0.001
+      const clusterSpeed = Math.random() * 0.0004 + 0.0006
 
       for (let i = 0; i < LEAVES_PER_CLUSTER; i++) {
         const leaf = createLeaf()

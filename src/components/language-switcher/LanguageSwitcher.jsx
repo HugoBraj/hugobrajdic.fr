@@ -31,6 +31,24 @@ const LanguageSwitcher = () => {
             <circle cx="256" cy="256" r="256" fill="#fff" />
           </mask>
           <g mask="url(#SVGuywqVbel)">
+            <path fill="#eee" d="M167 0h178l25.9 252.3L345 512H167l-29.8-253.4z" />
+            <path fill="#0052b4" d="M0 0h167v512H0z" />
+            <path fill="#d80027" d="M345 0h167v512H345z" />
+          </g>
+        </svg>
+      ) : (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 512 512"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <mask id="SVGuywqVbel">
+            <circle cx="256" cy="256" r="256" fill="#fff" />
+          </mask>
+          <g mask="url(#SVGuywqVbel)">
             <path
               fill="#eee"
               d="M256 0L0 256v64l32 32l-32 32v128l22-8l23 8h23l54-32l54 32h32l48-32l48 32h32l54-32l54 32h68l-8-22l8-23v-23l-32-54l32-54v-32l-32-48l32-48v-32l-32-54l32-54V0z"
@@ -47,24 +65,6 @@ const LanguageSwitcher = () => {
               fill="#eee"
               d="m187 243l57-41h-70l57 41l-22-67zm-81 0l57-41H93l57 41l-22-67zm-81 0l57-41H12l57 41l-22-67zm162-81l57-41h-70l57 41l-22-67zm-81 0l57-41H93l57 41l-22-67zm-81 0l57-41H12l57 41l-22-67Zm162-82l57-41h-70l57 41l-22-67zm-81 0l57-41H93l57 41l-22-67Zm-81 0l57-41H12l57 41l-22-67Z"
             />
-          </g>
-        </svg>
-      ) : (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          viewBox="0 0 512 512"
-          aria-hidden="true"
-          focusable="false"
-        >
-          <mask id="SVGuywqVbel">
-            <circle cx="256" cy="256" r="256" fill="#fff" />
-          </mask>
-          <g mask="url(#SVGuywqVbel)">
-            <path fill="#eee" d="M167 0h178l25.9 252.3L345 512H167l-29.8-253.4z" />
-            <path fill="#0052b4" d="M0 0h167v512H0z" />
-            <path fill="#d80027" d="M345 0h167v512H345z" />
           </g>
         </svg>
       )}
