@@ -55,7 +55,7 @@ const ScrollToAnchor = () => {
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/">
       <ScrollToAnchor />
       <Navbar />
       <main className='main'>
